@@ -1,0 +1,102 @@
+<!--
+  Copyright 2018 Farbod Salamat-Zadeh
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="Widget.AppTheme" parent="android:Widget" />
+
+    <style name="Widget.AppTheme.Toolbar">
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="Widget.AppTheme.CardView" parent="CardView.Light">
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="Widget.AppTheme.CardView.Tile">
+        <item name="android:radius">0dp</item>
+    </style>
+
+    <style name="Widget.AppTheme.CardLateralPadding">
+        <item name="android:paddingLeft">@dimen/card_padding</item>
+        <item name="android:paddingRight">@dimen/card_padding</item>
+    </style>
+
+    <style name="Widget.AppTheme.EditText" parent="Widget.AppCompat.EditText" />
+
+    <style name="Widget.AppTheme.EditText.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Widget.AppTheme.EditText.SingleLine.Input">
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="Widget.AppTheme.EditText.SingleLine.Selector">
+        <item name="android:editable">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:scrollHorizontally">false</item>
+    </style>
+
+    <style name="Widget.AppTheme.TextView" parent="TextAppearance.AppCompat" />
+
+    <style name="Widget.AppTheme.TextView.CardTitle">
+        <item name="android:textSize">@dimen/card_text_title_medium</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="Widget.AppTheme.TextView.CardTitle.BottomPadding">
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="Widget.AppTheme.TextView.CardSubtitle">
+        <item name="android:textSize">@dimen/card_text_subtitle</item>
+        <item name="android:textColor">@color/text_black_secondary</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="Widget.AppTheme.TextView.CardSupportingText">
+        <item name="android:textSize">@dimen/card_text_subtitle</item>
+        <item name="android:textColor">@color/text_black_secondary</item>
+    </style>
+
+    <style name="Widget.AppTheme.TextView.FloatingLabel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_black_secondary</item>
+    </style>
+
+    <style name="Widget.AppTheme.TextView.InputText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+</resources>

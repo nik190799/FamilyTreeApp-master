@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hexanovate.familytree">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".FamilyTreeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.user.UserActivity"></activity>
+        <activity android:name=".ui.admin.AdminActivity" />
+        <activity android:name=".ui.admin.UserPermissionsActivity" />
+        <activity android:name=".ui.SplashScreen" />
+        <activity
+            android:name=".ui.AboutusActivity"
+            android:label="@string/title_about_us" />
+        <activity android:name=".ui.subadmin.home.MainActivity" />
+        <activity android:name=".ui.admin.tree.TreeActivityAdmin" />
+        <activity android:name=".ui.admin.tree.TreeListActivityAdmin" />
+        <activity android:name=".ui.subadmin.tree.TreeActivity" />
+        <activity android:name=".ui.subadmin.tree.TreeListActivity" />
+        <activity android:name=".ui.user.tree.TreeActivityUser" />
+        <activity android:name=".ui.user.tree.TreeListActivityUser" />
+        <activity
+            android:name=".ui.subadmin.person.PersonListActivity"
+            android:label="@string/title_person_list" />
+        <activity
+            android:name=".ui.subadmin.event.EventsActivity"
+            android:label="@string/title_events" >
+
+        </activity>
+        <activity
+            android:name=".ui.subadmin.person.ViewPersonActivity"
+            android:label="@string/title_view_person" />
+        <activity
+            android:name=".ui.subadmin.person.EditPersonActivity"
+            android:label="@string/title_edit_person" />
+        <activity
+            android:name=".ui.subadmin.person.CreatePersonActivity"
+            android:label="@string/title_create_person" />
+        <activity
+            android:name=".ui.subadmin.marriage.EditMarriageActivity"
+            android:label="@string/title_edit_marriage" />
+        <activity
+            android:name=".ui.subadmin.marriage.ViewMarriageActivity"
+            android:label="@string/title_view_marriage" />
+
+
+
+        <activity android:name=".ui.admin.home.MainActivityAdmin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.admin.person.PersonListActivityAdmin"
+            android:label="@string/title_person_list" />
+        <activity
+            android:name=".ui.admin.event.EventsActivityAdmin"
+            android:label="@string/title_events" >
+
+        </activity>
+        <activity
+            android:name=".ui.admin.person.ViewPersonActivityAdmin"
+            android:label="@string/title_view_person" />
+        <activity
+            android:name=".ui.admin.person.EditPersonActivityAdmin"
+            android:label="@string/title_edit_person" />
+        <activity
+            android:name=".ui.admin.person.CreatePersonActivityAdmin"
+            android:label="@string/title_create_person" />
+        <activity
+            android:name=".ui.admin.marriage.EditMarriageActivityAdmin"
+            android:label="@string/title_edit_marriage" />
+        <activity
+            android:name=".ui.admin.marriage.ViewMarriageActivityAdmin"
+            android:label="@string/title_view_marriage" />
+
+
+        <activity android:name=".ui.user.home.MainActivityUser" >
+
+        </activity>
+        <activity
+            android:name=".ui.user.person.PersonListActivityUser"
+            android:label="@string/title_person_list" />
+        <activity
+            android:name=".ui.user.event.EventsActivityUser"
+            android:label="@string/title_events" />
+        <activity
+            android:name=".ui.user.person.ViewPersonActivityUser"
+            android:label="@string/title_view_person" />
+        <activity
+            android:name=".ui.user.person.EditPersonActivityUser"
+            android:label="@string/title_edit_person" />
+        <activity
+            android:name=".ui.user.person.CreatePersonActivityUser"
+            android:label="@string/title_create_person" />
+        <activity
+            android:name=".ui.user.marriage.EditMarriageActivityUser"
+            android:label="@string/title_edit_marriage" />
+        <activity
+            android:name=".ui.user.marriage.ViewMarriageActivityUser"
+            android:label="@string/title_view_marriage" />
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name=".login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".login.AndroidDatabaseManager" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

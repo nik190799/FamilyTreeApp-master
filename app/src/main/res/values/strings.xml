@@ -1,0 +1,200 @@
+<!--
+  Copyright 2018 Farbod Salamat-Zadeh
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+
+    <!-- Name of the app -->
+    <string name="app_name">Family Tree</string>
+
+    <!-- Activity titles -->
+    <string name="title_home">@string/app_name</string>
+    <string name="title_tree">Family Tree</string>
+    <string name="title_tree_person">%1$s\'s Tree</string>
+    <string name="title_tree_list">@string/title_tree</string>
+    <string name="title_person_list">People</string>
+    <string name="title_events">Birthdays and Anniversaries</string>
+    <string name="title_view_person" />
+    <string name="title_create_person">Add Person</string>
+    <string name="title_create_person_withName">Adding %1$s</string>
+    <string name="title_edit_person">Edit Person</string>
+    <string name="title_edit_person_withName">Editing %1$s</string>
+    <string name="title_create_marriage">Add Marriage</string>
+    <string name="title_edit_marriage">Edit Marriage</string>
+    <string name="title_view_marriage" />
+
+    <!-- Action texts for menus -->
+    <string name="action_add_person">Add person</string>
+    <string name="action_choose_layers">Choose layers to display</string>
+    <string name="action_create_new">Create new</string>
+    <string name="action_done">Done</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_next">Next</string>
+
+    <!-- Navigation item texts -->
+    <string name="nav_item_home">@string/title_home</string>
+    <string name="nav_item_tree">View Tree</string>
+    <string name="nav_item_tree_list">View Tree (list)</string>
+    <string name="nav_item_person_list">@string/title_person_list</string>
+    <string name="nav_item_events">@string/title_events</string>
+
+    <!-- Nav drawer content description texts -->
+    <string name="drawer_open">Drawer open</string>
+    <string name="drawer_close">Drawer close</string>
+
+    <!-- Home card texts -->
+    <string name="home_item_tree_title">@string/nav_item_tree</string>
+    <string name="home_item_tree_desc">Browse the family tree.</string>
+    <string name="home_item_people_title">@string/nav_item_person_list</string>
+    <plurals name="home_item_people_desc">
+        <item quantity="one">List of family members. Currently, %1$d person have been added.</item>
+        <item quantity="other">List of family members. Currently, %1$d people have been added.</item>
+    </plurals>
+    <string name="home_item_events_title">Browse events</string>
+    <string name="home_item_events_desc">View a list of birthdays and anniversaries.</string>
+    <string name="home_item_addPerson_title">Add person</string>
+    <string name="home_item_addPerson_desc">Add a new family member to the tree.</string>
+
+    <!-- User input labels for person -->
+    <string name="person">Person</string>
+    <string name="forename">Forename</string>
+    <string name="surname">Surname</string>
+    <string name="sex">Sex</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="birth_death">Birth / death</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="place_of_birth">Place of birth</string>
+    <string name="alive_question">Alive?</string>
+    <string name="date_of_death">Date of death</string>
+    <string name="place_of_death">Place of death</string>
+    <string name="marriages">Marriages</string>
+    <string name="children">Children</string>
+    <plurals name="children_count_subtitle">
+        <item quantity="one">%1$d child</item>
+        <item quantity="other">%1$d children</item>
+    </plurals>
+    <string name="add_child">Add child</string>
+
+    <!-- User input labels for marriage -->
+    <string name="people">People</string>
+    <string name="person_1">Person 1</string>
+    <string name="married_to">married to</string>
+    <string name="person_2">Person 2</string>
+    <string name="details">Details</string>
+    <string name="currently_married">Currently married?</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="place_of_marriage">Place of marriage</string>
+    <string name="add_marriage">Add marriage</string>
+
+    <!-- Person / marriage properties -->
+    <string name="full_name">Full name</string>
+    <string name="born">Born</string>
+    <string name="died">Died</string>
+    <string name="no_children">%1$s does not have children</string>
+    <string name="parents">Parents</string>
+    <string name="no_parents">No parents have been entered for %1$s</string>
+    <string name="marriage_with">Marriage with %1$s</string>
+    <string name="no_marriages">%1$s does not have spouses</string>
+    <string name="view_tree">View %1$s\'s tree</string>
+    <string name="married">Married</string>
+    <string name="divorced">Divorced</string>
+
+    <!-- Placeholder texts -->
+    <string name="db_marriages_empty">No marriages have been entered yet</string>
+
+    <!-- Prompts to user after incorrect user input -->
+    <string name="error_name_empty">Name cannot be empty</string>
+    <string name="validate_name_empty">You must enter a forename and surname</string>
+    <string name="validate_dateOfBirth_empty">You must enter a date of birth</string>
+    <string name="validate_dateOfBirth_future">Date of birth cannot be in the future</string>
+    <string name="validate_dateOfDeath_beforeBirth">
+        Date of death cannot be before the date of birth
+    </string>
+    <string name="validate_startDate_empty">You must enter a start date</string>
+    <string name="validate_startDate_future">Start date cannot be in the future</string>
+    <string name="validate_endDate_beforeStart">End date cannot be before the start date</string>
+    <string name="validate_marriage_people_empty">You must specify two people</string>
+    <string name="validate_marriage_people_same">A person cannot be married to themselves</string>
+    <string name="error_no_tree_no_layers">
+        You cannot choose layers on the tree since there is no tree being displayed
+    </string>
+    <string name="error_couldntChangeImage">Error changing the profile image</string>
+
+    <!-- Dialog texts -->
+    <string name="dialog_add_child_title">@string/add_child</string>
+    <string name="dialog_add_child_subtitle">
+        Can\'t see the right child? Make sure the date of birth of this person and the child is correct!
+    </string>
+    <string name="dialog_add_marriage_title">Add marriage</string>
+    <string name="dialog_choose_person_title">Choose person</string>
+    <string name="dialog_confirm_delete_title">Confirm delete</string>
+    <string name="dialog_confirm_delete_person_message">
+        Are you sure you want to delete this person? This cannot be undone.
+    </string>
+    <string name="dialog_confirm_delete_marriage_message">
+        Are you sure you want to delete this marriage? This cannot be undone.
+    </string>
+    <string name="dialog_choose_layers_title">@string/action_choose_layers</string>
+    <plurals name="dialog_choose_layers_item">
+        <item quantity="one">Display %1$d layer</item>
+        <item quantity="other">Display %1$d layers</item>
+    </plurals>
+    <string name="dialog_personView_item_viewPerson">View person</string>
+    <string name="dialog_personView_item_addParent">Add parent</string>
+    <string name="dialog_personView_item_addMarriage">Add marriage</string>
+    <string name="dialog_personView_item_addChild">Add child</string>
+    <string name="dialog_personView_item_switchTree">Switch to %1$s\'s tree</string>
+    <plurals name="dialog_personView_marriages">
+        <item quantity="one">Married to %1$s</item>
+        <item quantity="two">Married to %1$s and %2$d other</item>
+        <item quantity="other">Married to %1$s and %2$d others</item>
+    </plurals>
+    <string name="dialog_pickImage_title">Select image</string>
+
+    <!-- Other Snackbar messages -->
+    <string name="msg_tree_person_updated">Displaying %1$s\'s tree</string>
+    <string name="msg_added_parent">Added %2$s as %1$s\'s child</string>
+    <string name="msg_added_child">Added %1$s as %2$s\'s parent</string>
+    <string name="msg_added_spouse">Added %1$s as %2$s\'s spouse</string>
+    <string name="nav_item_about_us">About us</string>
+    <string name="title_about_us">About us</string>
+
+
+    <string name="text_accounts">All Accounts</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_hello">Hello,</string>
+    <string name="text_title">Android Tutorials Hub</string>
+    <string name="nav_item_logout">Logout</string>
+
+</resources>

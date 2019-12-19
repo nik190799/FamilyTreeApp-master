@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2018 Farbod Salamat-Zadeh
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+
+    <!-- Navigation drawer -->
+    <dimen name="navdrawer_width">@dimen/match_parent</dimen>
+    <dimen name="navdrawer_header_height">135dp</dimen>
+
+    <!-- Padding and spacing -->
+    <dimen name="keyline_2">72dp</dimen>
+    <dimen name="keyline_2_minus_16dp">56dp</dimen>
+    <dimen name="spacing_micro">4dp</dimen>
+    <dimen name="spacing_normal">8dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+
+    <!-- Card dimensions -->
+    <dimen name="card_text_title_medium">19sp</dimen>
+    <dimen name="card_text_subtitle">14sp</dimen>
+    <dimen name="card_text_supporting">14sp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_padding_vertical_large">24dp</dimen>
+
+    <!--
+      Match parent,
+      as per https://developer.android.com/reference/android/view/ViewGroup.LayoutParams.html#MATCH_PARENT
+      -->
+    <item name="match_parent" format="integer" type="dimen">-1</item>
+
+</resources>
